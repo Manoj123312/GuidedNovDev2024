@@ -1,9 +1,9 @@
 ﻿{
   "Descriptor": {
-    "UId": "6f63a1aa-acc3-7f56-0c1a-066ecf069aa7",
+    "UId": "5f31e94f-56cb-95e1-b0e4-7fa5f972e84d",
     "Name": "DevClassic",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1740661570000)\/",
+    "ModifiedOnUtc": "\/Date(1740678561000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/DevClassic.csproj",
     "Description": "Test package for some Classic UI customizations.",
