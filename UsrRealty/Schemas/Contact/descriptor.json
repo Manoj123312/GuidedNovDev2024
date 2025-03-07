@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "d75c2816-2a30-4893-b4d7-ee559b741a3c",
+    "Name": "Contact",
+    "ModifiedOnUtc": "\/Date(1741289611000)\/",
+    "Parent": {
+      "UId": "16be3651-8fe2-4159-8dd0-a803d4683dd3",
+      "Name": "Contact"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Contact",
+    "DependsOn": []
+  }
+}

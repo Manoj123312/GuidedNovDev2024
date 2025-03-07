@@ -1,0 +1,101 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ServiceSchemaManager",
+      "UId": "f5b0405e-2cb8-44b6-9060-7a68a0e6234c",
+      "A2": "UsrGoRestService",
+      "A5": "9874b775-17fc-4d2d-9d29-8861bb2bebf9",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "2ee10dae-3cf6-49ac-8d13-5c387906f1d9",
+      "B8": "8.2.2.1859",
+      "IQ1": "https://gorest.co.in",
+      "IQ2": 1,
+      "IQ7": [],
+      "IQ4": [
+        {
+          "UId": "b77f5ffe-b204-44ad-8a22-d83d90253261",
+          "A2": "UsrMethod1",
+          "A3": "f5b0405e-2cb8-44b6-9060-7a68a0e6234c",
+          "A4": "f5b0405e-2cb8-44b6-9060-7a68a0e6234c",
+          "IR3": 5000,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [],
+            "IT2": 1,
+            "IT1": "/public/v2/users"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "dfa780c4-275d-4b1e-8b40-808b3d3542f6",
+                "A2": "UsrParameter",
+                "IU1": "$",
+                "IU2": "Object",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": [
+                  {
+                    "UId": "eb8d0298-2724-43a2-953b-f0d2575f31dd",
+                    "A2": "UsrId",
+                    "IU1": "id",
+                    "IU2": "Integer",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "e7087302-f33c-4ae2-bd9f-aa2dcc27a9a3",
+                    "A2": "UsrName",
+                    "IU1": "name",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "1fded174-ed42-45cc-81d6-51daf4321dfe",
+                    "A2": "UsrEmail",
+                    "IU1": "email",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "1be0341e-cf1c-4e57-a7ae-1de309258c33",
+                    "A2": "UsrGender",
+                    "IU1": "gender",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

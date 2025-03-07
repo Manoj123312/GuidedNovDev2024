@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f5b0405e-2cb8-44b6-9060-7a68a0e6234c",
+    "Name": "UsrGoRestService",
+    "ModifiedOnUtc": "\/Date(1741285503000)\/",
+    "ManagerName": "ServiceSchemaManager",
+    "Caption": "gorest.co.in",
+    "DependsOn": []
+  }
+}
