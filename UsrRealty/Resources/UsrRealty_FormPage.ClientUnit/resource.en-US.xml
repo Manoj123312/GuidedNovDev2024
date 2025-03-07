@@ -24,7 +24,7 @@
 			<Item Name="LocalizableStrings.Percent_label.Value" Value="Comm.percent" />
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50.0 USD" />
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Push me!" />
-			<Item Name="LocalizableStrings.RunWebServiceMenuItem_caption.Value" Value="Run max price calculation web service" />
+			<Item Name="LocalizableStrings.RunWebServiceMenuItem_caption.Value" Value="Run min price calculation web service" />
 		</Items>
 	</Group>
 </Resources>

@@ -22,7 +22,7 @@ namespace Terrasoft.Configuration
                 return -1;
             }
             Select select = new Select(UserConnection)
-                .Column(Func.Max("UsrPrice"))
+                .Column(Func.Min("UsrPrice"))
                 .From("UsrRealty")
                 .Where("UsrTypeId").IsEqual(Column.Parameter(new Guid(realtyTypeId)))
                 .And("UsrOfferTypeId").IsEqual(Column.Parameter(new Guid(realtyOfferTypeId)))

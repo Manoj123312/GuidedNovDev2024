@@ -1153,7 +1153,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 					};
 					const response = await httpClientService.post(endpoint, params);
 					
-					console.log("response max price = " + response.body.GetMaxPriceByTypeIdResult);
+					console.log("response min price = " + response.body.GetMaxPriceByTypeIdResult);
 					
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
