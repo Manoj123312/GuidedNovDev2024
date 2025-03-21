@@ -15,7 +15,7 @@ namespace Terrasoft.Configuration
         [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped,
             RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
 
-        public decimal GetMaxPriceByTypeId(string realtyTypeId, string realtyOfferTypeId)
+        public decimal GetMinPriceByTypeId(string realtyTypeId, string realtyOfferTypeId)
         {
             if (string.IsNullOrEmpty(realtyTypeId) || string.IsNullOrEmpty(realtyOfferTypeId))
             {

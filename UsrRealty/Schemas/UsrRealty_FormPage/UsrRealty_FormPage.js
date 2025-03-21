@@ -1187,7 +1187,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 					const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
 					const transferName = "rest";
 					const serviceName = "RealtyService";
-					const methodName = "GetMaxPriceByTypeId";
+					const methodName = "GetMinPriceByTypeId";
 					const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
 					
 					//const endpoint = "http://localhost/D1_Studio/0/rest/RealtyService/GetMaxPriceByTypeId";
