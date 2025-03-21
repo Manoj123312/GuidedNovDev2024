@@ -6,6 +6,7 @@
 			<Item Name="Columns.UsrArea.Caption" Value="Area, sq ft" />
 			<Item Name="Columns.UsrCity.Caption" Value="City" />
 			<Item Name="Columns.UsrComment.Caption" Value="Comment" />
+			<Item Name="Columns.UsrCommentRequired.Caption" Value="CommentRequired" />
 			<Item Name="Columns.UsrCommission.Caption" Value="Commission, USD" />
 			<Item Name="Columns.UsrCountry.Caption" Value="Country" />
 			<Item Name="Columns.UsrManager.Caption" Value="Manager" />

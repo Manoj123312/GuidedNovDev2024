@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.134fc5df-6b89-62b6-c1f7-f36c4b094075.Caption" Value="Make elements required: Comment" />
 			<Item Name="AddonConfig.Rules.e5455991-83d8-12e3-9408-87a56e46aa0d.Caption" Value="Show elements: Comment" />
 			<Item Name="Caption" Value="Realty form page (Business rules)" />
 		</Items>

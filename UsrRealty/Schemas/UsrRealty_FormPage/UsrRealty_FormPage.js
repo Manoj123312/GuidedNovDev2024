@@ -457,6 +457,29 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 			},
 			{
 				"operation": "insert",
+				"name": "UsrCommentRequired",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 5,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"label": "$Resources.Strings.PDS_UsrCommentRequired_sebwq4k",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrCommentRequired_sebwq4k",
+					"visible": false,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_es4n31s",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -868,7 +891,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 							"MySuperValidator": {
 								"type": "usr.DGValidator",
 								"params": {
-									"minValue": 50,
+									"minValue": 0,
 									"message": "#ResourceString(PriceCannotBeLess)#"
 								}
 							}
@@ -882,7 +905,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 							"MySuperValidator": {
 								"type": "usr.DGValidator",
 								"params": {
-									"minValue": 100,
+									"minValue": 0,
 									"message": "#ResourceString(AreaCannotBeLess)#"
 								}
 							}
@@ -1004,6 +1027,11 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 								}
 							}
 						}
+					},
+					"PDS_UsrCommentRequired_sebwq4k": {
+						"modelConfig": {
+							"path": "PDS.UsrCommentRequired"
+						}
 					}
 				}
 			},
@@ -1110,6 +1138,23 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 						var percent = await request.$context.PDS_UsrOfferTypeUsrCommissionPercent_sdopg17;
 						var commission = price * percent / 100;
 						request.$context.PDS_UsrCommission_e9lio37 = commission;
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+					if (request.attributeName === 'PDS_UsrPrice_yo6zwgw' ) { // if price changed
+						// debugger;
+						var price = await request.$context.PDS_UsrPrice_yo6zwgw;
+						const sysSettingsService = new sdk.SysSettingsService();
+						const settingValue = await sysSettingsService.getByCode('MinPriceToRequireRealtyComment');
+						let minVal = settingValue.value;
+						var condition = price > minVal;
+						request.$context.PDS_UsrCommentRequired_sebwq4k = condition;
 					}
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
