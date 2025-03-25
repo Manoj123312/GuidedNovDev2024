@@ -1190,7 +1190,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 					const methodName = "GetMinPriceByTypeId";
 					const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
 					
-					//const endpoint = "http://localhost/D1_Studio/0/rest/RealtyService/GetMaxPriceByTypeId";
+					//const endpoint = "http://localhost/D1_Studio/0/rest/RealtyService/GetMinPriceByTypeId";
 					/* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
 					var params = {
 						realtyTypeId: typeId,
@@ -1198,7 +1198,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "RightUt
 					};
 					const response = await httpClientService.post(endpoint, params);
 					
-					console.log("response min price = " + response.body.GetMaxPriceByTypeIdResult);
+					console.log("response min price = " + response.body.GetMinPriceByTypeIdResult);
 					
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
